@@ -29,9 +29,42 @@
         </div>
       </nav>
 
-    <div id="PetShop">
-        {{ message }}
-    </div>
+
+      <div class="container">
+        <div id="PetShop">
+          <p>Contenido</p>
+          <p>Ingresa los datos  {{ nombre }} {{ edad }}</p>
+          <p>Nombre</p>
+          <div>
+            <input type="text" v-bind:value="nombre">
+        </div>
+        <p>Edad</p>
+        <div>
+          <input type="text" v-bind:value="edad">
+      </div>
+        </div>
+        <div class="row"><h1>Actividad 3 Vuejs</h1></div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card" style="width: 18rem;" id="cambiarfoto">
+                  <img src="OIP.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Home</h5>
+                    <p class="card-text">Hola</p>
+                    <a class="btn btn-primary" @click="OIP.jpg = note-20-4-1.webp">Cambiar foto</a>
+                  </div>
+                </div>
+          </div>
+          </div>
+      </div>
+
+
+      <div id="hide">
+        <button class="btn btn-primary" v-on:click="isHidden = !isHidden">boton magico</button>
+        <p v-if="!isHidden">Haga clic en el boton de arriba pa</p>
+      </div>
+
+
     <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
@@ -42,7 +75,10 @@
             message: "Tarea de VueJs!"
         }
     })
+
 </script>
-    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
